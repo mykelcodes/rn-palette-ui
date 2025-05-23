@@ -10,7 +10,6 @@ npm install rn-palette-ui
 
 ## Usage
 
-
 ```js
 import { multiply } from 'rn-palette-ui';
 
@@ -18,7 +17,6 @@ import { multiply } from 'rn-palette-ui';
 
 const result = await multiply(3, 7);
 ```
-
 
 ## Contributing
 
