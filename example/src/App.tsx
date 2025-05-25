@@ -1,12 +1,16 @@
+import { useState } from 'react';
 import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'rn-palette-ui';
+import { Button } from 'rn-palette-ui/Button';
 
-const result = multiply(3, 7);
+const result = 144 * 7;
 
 export default function App() {
+    const [showResult, setShowResult] = useState(false);
+
     return (
         <View style={styles.container}>
-            <Text>Result: {result}</Text>
+            {showResult && <Text>Result: {result}</Text>}
+            <Button onPress={() => setShowResult(true)} type="round" />
         </View>
     );
 }
